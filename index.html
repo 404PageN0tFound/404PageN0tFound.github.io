@@ -5,6 +5,11 @@
 html {
   font-family: Helvetica, sans-serif;
 }
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>
 </head>
 <body>
@@ -16,7 +21,7 @@ if ( window !== window.parent )
 }
 </script>
 
-<h1>paint's homepage</h1>
+<h1 class="rainbow-text">paint's homepage</h1>
   
 </body>
 </html>
