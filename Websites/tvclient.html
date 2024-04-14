@@ -51,6 +51,27 @@ if ( window !== window.parent )
   <!-- <a><font color="#000000"><span style="background-color: #ff0015"><marquee scrollamount="5" align="bottom" scrolldelay="1">Servers for paint's homepage will be shutdown for maintenance Fri 12 Apr 2024. Effective until: unspecified.</marquee></span></font></a> -->
   <h1>tv client</h1>
   <img src=https://paintdev.co.uk/anibar.gif></img>
+  
+<script type="text/javascript">
+
+function go_get(){
+ var base_url = 'http://www.youtube.com/embed?listType=search&list=';
+ var search_field = document.getElementById('yourtextfield').value;
+ var target_url = base_url + search_field;
+ var ifr = document.getElementById('youriframe');
+ ifr.src = target_url;
+ return false;
+}
+
+</script> 
+
+<form onsubmit="go_get(); return false;" >
+ <input type="text"  id="yourtextfield"/>
+ <input type="submit" value="Search Playlists" />
+</form>
+
+<iframe id="youriframe" width="640" height="360" ></iframe>
+
 </center>
   
 </body>
