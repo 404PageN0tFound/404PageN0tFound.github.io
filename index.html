@@ -22,8 +22,26 @@ html {
     100% { color: red; }
 }
 
+@keyframes secondaryColorAnimation {
+    0% { color: red; }
+    10% { color: blueviolet; }
+    20% { color: blue; }
+    30% { color: #5582ff; }
+    40% { color: turquoise; }
+    50% { color: green; }
+    60% { color: yellowgreen; }
+    70% { color: yellow; }
+    80% { color: orange; }
+    90% { color: orangered; }
+    100% { color: red; }
+}  
+
 h1 {
   animation: colorAnimation 5s infinite;
+}
+
+h2 {
+  animation: secondaryColorAnimation 5s infinite;
 }
   
 body {
