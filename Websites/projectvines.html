@@ -62,7 +62,8 @@ function go_get(){
  var search_field = document.getElementById('yourtextfield').value;
  var target_url = search_field;
  var plcholdr = 'https://vine.co/';
- window.location.replace(plcholdr + target_url + '/');
+ var url = plcholdr + target_url + '/';
+ window.open(url, '_blank').focus();
  return false;
 }
 
