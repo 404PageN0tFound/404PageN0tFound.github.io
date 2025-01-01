@@ -4,11 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <style>
+    .centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+  </style>
   <title>Windows 7</title>
 </head>
 <body>
 <div class="win7">
-  <div class="window active" style="max-width: 300px">
+  <div class="window active" class="centered" style="max-width: 300px">
   <div class="title-bar">
     <div class="title-bar-text">Windows Last Resort Recovery Image</div>
     <div class="title-bar-controls">
@@ -49,7 +58,7 @@
   </div>
   <div class="window-body has-space">
     <h2 class="instruction instruction-primary">Are you sure you want to cancel Windows Installation?</h2>
-    <div role="progressbar" class="marquee"></div>
+    <p>If you press "Yes", your computer could and will be at major risk.</p>
   </div>
   <footer style="text-align: right">
     <button onclick="#">Yes</button> <button onclick="history.back() class="default">No</button>
