@@ -61,7 +61,24 @@
     <p>If you press "Yes", your computer could and will be at major risk.</p>
   </div>
   <footer style="text-align: right">
-    <button onclick="#">Yes</button> <button onclick="history.back() class="default">No</button>
+    <button onclick="#">Yes</button> <button onclick="history.back()" class="default">No</button>
+  </footer>
+</div>
+
+    <div class="window active is-bright" id="install" role="dialog" aria-labelledby="dialog-title">
+  <div class="title-bar">
+    <div class="title-bar-text" id="dialog-title">Installing Windows</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="history.back()"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <h2 class="instruction instruction-primary">Quick installing Windows from a diskette...</h2>
+    <div role="progressbar" class="marquee"></div>
+    <p>Do not eject the diskette or shut down your computer during installation.</p>
+  </div>
+  <footer style="text-align: right">
+    <button onclick="#close">Cancel</button>
   </footer>
 </div>
     
