@@ -8,9 +8,20 @@
 </head>
 <body>
 <div class="win7">
-  <h3>Windows Last Resort Recovery Image</h3>
+  <div class="window active" style="max-width: 300px">
+  <div class="title-bar">
+    <div class="title-bar-text">Windows Last Resort Recovery Image</div>
+    <div class="title-bar-controls">
+      <a href="#close"><button aria-label="Close"></button></a>
+    </div>
+  </div>
+  <div class="window-body has-space">
+
+
+  You are running a Beta version of Windows 7 and to protect your system, we have to reset your computer.
   <p style="color: blue;">Inserted Diskette: Windows 7 Ultimate Beta (Build 7100)</p>
   Select a version of Windows to install.
+  <br>
   <br>
 <div class="field-row">
   <input checked="" disabled="" type="checkbox" id="example4">
@@ -24,7 +35,29 @@
   
 <br>
   
-<a href="#"><button>Cancel</button></a> <button class="default">Install Windows</button>
+<a href="#close"><button>Cancel</button></a> <button class="default">Install Windows</button>
+
+
+    
+
+<div class="window active is-bright" id="close" role="dialog" aria-labelledby="dialog-title">
+  <div class="title-bar">
+    <div class="title-bar-text" id="dialog-title">Windows Last Resort Recovery Image</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="history.back()"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <h2 class="instruction instruction-primary">Are you sure you want to cancel Windows Installation?</h2>
+    <div role="progressbar" class="marquee"></div>
+  </div>
+  <footer style="text-align: right">
+    <button onclick="#">Yes</button> <button onclick="history.back() class="default">No</button>
+  </footer>
+</div>
+    
+  </div>
+</div>
 </div>
 </body>
 </html>
