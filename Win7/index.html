@@ -1,0 +1,135 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>Windows 7 simulator</title>
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css">
+    
+    <link href="/Content/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+
+    
+    
+</head>
+
+<body>
+    <ul id="wallpaper">
+        <li class="arches-national-park" style="display: list-item;"></li>
+        <li class="blue-mountains" style="display: none;"></li>
+        <li class="justis-valley-switzerland" style="display: none;"></li>
+        <li class="moraine-lake-national-park" style="display: none;"></li>
+        <li class="rocky-mountain-national-park" style="display: none;"></li>
+    </ul>
+    
+
+
+<div id="windows">
+  <h1>Currently restoring, expect stuff to be broken.</h1>
+    <input type="hidden" id="confirm-folder-merge" value="/Windows7/Simulator/MergeFolderOptions">
+    <div id="desktop">
+        <article class="sticky-note desktop-item ui-resizable ui-draggable active" style="z-index: 9;">
+            <div class="header ui-draggable-handle">
+                <div class="delete"></div>
+            </div>
+            <h1>Windo</h1>
+            <div class="text"><textarea>Welcome to this windows 7 simulator project. 
+Functionality will be included over time.
+                
+Latest changes: 
+- 20 Oct 2014: Window explorer navigation
+- 10 Oct 2014: Window support in start bar
+-  7 Oct 2014: Window actions on:
+    - close, 
+    - open (start menu -&gt; Computer), 
+    - maximize
+    - minimize
+-  1 Oct 2014: Mouseovers startmenu on 
+</textarea></div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></article>
+        <div class="sticky-note desktop-item sticky-note-tip ui-resizable ui-draggable">
+            <div class="header ui-draggable-handle">
+                <div class="delete"></div>
+            </div>
+            <h2>Tips</h2>
+            <div class="text"><textarea>- Press F11 for fullscreen mode.
+- Click 'Shut down' in menu start to leave this page.
+- Click 'Computer' in menu start to open 1 or more windows.</textarea></div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div>
+    </div>
+    <div id="startbalk">
+        <div class="inner">
+            <div class="startbutton-container" tabindex="0">
+                <div id="startmenu" style="display: none;">
+    <ul class="menu-items menu-items-pinned">
+        <li class="has-subitems visual-studio"><span class="icon"></span>Visual Studio 2012<span class="show-subitems"></span></li>
+        <li class="has-subitems outlook"><span class="icon"></span>Outlook 2013<span class="show-subitems"></span></li>
+        <li class="has-subitems sql"><span class="icon"></span>SQL Server Management Studio<span class="show-subitems"></span></li>
+    </ul>
+    <ul class="menu-items">
+        <li class="has-subitems skype"><span class="icon"></span>Skype<span class="show-subitems"></span></li>
+        <li class="has-subitems word"><span class="icon"></span>Word 2013<span class="show-subitems"></span></li>
+        <li class="has-subitems excel"><span class="icon"></span>Excel 2013<span class="show-subitems"></span></li>
+        <li class="has-subitems notepad"><span class="icon"></span>Notepad<span class="show-subitems"></span></li>
+        <li class="calc"><span class="icon"></span>Calculator</li>
+    </ul>
+    <ul class="right">
+        <li title="Open your personal folder.">Anne Gaastra</li>
+        <li class="last" title="Find Internet downloads and links to favourite websites.">Downloads</li>
+        <li class="last computer" data-window-url="/Windows7/Simulator/Window?directoryId=1" title="See the disk drives and other hardware connected to your computer.">Computer</li>
+        <li class="last-group" title="Change settings and customize functionality of your computer.">Control panel</li>
+        <li class="last-group" title="View and manage devices, printers and print jobs.">Devices and printers</li>
+        <li class="last-group" title="Choose the default programs for web browsing, e-mail, playing music, and other activities.">Default programs</li>
+    </ul>
+    <a class="afsluiten" title="Closes all open programs, shuts down windows simulator, and then redirects to homepage." href="/">
+        <span></span>
+    </a>
+</div>
+                <div class="startbutton" title="Start">
+                    <div class="startbutton-hover" style="display: none;"></div>
+                </div>
+            </div>
+            <ul id="startbalk-items"></ul>
+            <div class="system-icons">
+                <div class="system-icon system-icon-java" title="Java update available">
+                    <div class="system-icon-hover" style="display: none; opacity: 1;"></div>
+                </div>
+                <div class="system-icon system-icon-asp-net" title="ASP.NET Development Server - Port 54579">
+                    <div class="system-icon-hover"></div>
+                </div>
+                <div class="system-icon system-icon-flash" title="Update is ready to install">
+                    <div class="system-icon-hover"></div>
+                </div>
+                <div class="system-icon system-icon-outlook" title="Microsoft Outlook">
+                    <div class="system-icon-hover"></div>
+                </div>
+                <div class="system-icon system-icon-skype" title="Skype (Online)">
+                    <div class="system-icon-hover"></div>
+                </div>
+                <div class="system-icon system-icon-pc-issues" title="Solve PC issues: 2 important messages 3 total messages">
+                    <div class="system-icon-hover"></div>
+                </div>
+                <div class="system-icon system-icon-battery" title="Fully charged (100%)">
+                    <div class="system-icon-hover"></div>
+                </div>
+                <div class="system-icon system-icon-network" title="Internet access">
+                    <div class="system-icon-hover"></div>
+                </div>
+                <div class="system-icon system-icon-volume" title="Speakers: 18%">
+                    <div class="system-icon-hover"></div>
+                </div>
+                <div class="clock" title="Wednesday January 1 2025">20:11</div>
+            </div>
+            <div class="show-desktop" title="Show desktop"></div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="/Scripts/jquery-1.11.1.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+    <script src="/Scripts/Script.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="/Scripts/jquery-ui-1.11.2.js"></script>
+    <script type="text/javascript" src="/Scripts/windows7.js"></script>
+
+
+
+</body></html>
